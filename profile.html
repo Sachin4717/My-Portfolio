@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Kumar | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">SK</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Sachin</span> Kumar
+            </h1>
+            <div class="typing-container">
+                <h2 class="typing-text" id="typing-text"></h2>
+                <span class="cursor" id="cursor"></span>
+            </div>
+            <p class="hero-subtitle">Building scalable and impactful digital solutions</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="assests/Sachin_Kumar.pdf" class="btn-secondary">Download Resume</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Sachin4717" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sachin-kumar-451053345" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:sachinagrawal2244@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+917654514717" class="social-link"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionate Full Stack Developer with expertise in Django, React, Java, and modern web technologies. I
+                        specialize in building scalable applications that solve real-world problems.</p>
+                    <p>Hackathon Winner at TIDES IIT Roorkee, where I built "AthleteQ", an innovative platform for
+                        athlete talent development, strengthening my problem-solving and teamwork skills.</p>
+                    <p>Love clean code, continuously strive to improve my skills and build impactful, user-focused applications..</p>
+                </div>
+                <!-- <div class="about-card">
+                    <div class="card-content">
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Available for opportunities</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack Development</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-star"></i>
+                            <span>Django, Angular, Python</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Full Stack Developer</h3>
+                        <p>End-to-end development from database design to deployment</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Hackathon Winner</h3>
+                        <p>Proven track record in competitive programming challenges</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Real-World Experience</h3>
+                        <p>Production-ready applications and enterprise solutions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Innovation Driven</h3>
+                        <p>Creating cutting-edge solutions with modern technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <!-- <section class="features">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full Stack Developer</h3>
+                    <p>End-to-end development from database design to deployment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>Proven track record in competitive programming challenges</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Real-World Experience</h3>
+                    <p>Production-ready applications and enterprise solutions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Innovation Driven</h3>
+                    <p>Creating cutting-edge solutions with modern technologies</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=800&auto=format&fit=crop"
+                            alt="Visitor Gate Pass">
+                    </div>
+                    <div class="project-content">
+                        <h3>Visitor Gate Pass System</h3>
+                        <p>Comprehensive visitor management system with QR code generation and real-time tracking.</p>
+                        <div class="tech-tags">
+                            <span>Django</span>
+                            <span>Bootstrap</span>
+                            <span>Angular</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sachin4717/Visitor-Gate-Pass-System-SAIL" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <!-- <a href="#" class="btn-sm secondary">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80"
+                            alt="AthleteQ">
+                    </div>
+                    <div class="project-content">
+                        <h3>AthleteQ</h3>
+                        <p>Sports analytics platform for athlete performance tracking and team management.</p>
+                        <div class="tech-tags">
+                            <span>TypeScript</span>
+                            <span>HTML</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sachin4717/AthleteQ" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <!-- <a href="#" class="btn-sm secondary">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80"
+                            alt="Exam Sitting">
+                    </div>
+                    <div class="project-content">
+                        <h3>Exam Sitting Genie</h3>
+                        <p>AI-powered exam seating arrangement optimizer for large institutions.</p>
+                        <div class="tech-tags">
+                            <span>Flask</span>
+                            <span>Pandas</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sachin4717/Exam-Sitting-Genie" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <!-- <a href="#" class="btn-sm secondary">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://img.freepik.com/premium-vector/payroll-system-concept-vector-illustration-online-income-calculation-automatic-payment_675567-7307.jpg?w=1800"
+                            alt="Payroll">
+                    </div>
+                    <div class="project-content">
+                        <h3>Payroll System</h3>
+                        <p>Enterprise payroll management with automated calculations and compliance.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Redis</span>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sachin4717/Payroll-System" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <!-- <a href="#" class="btn-sm secondary">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80"
+                            alt="Job Finder">
+                    </div>
+                    <div class="project-content">
+                        <h3>Job Finder</h3>
+                        <p>MERN stack-based job portal enabling job search, filtering, and application tracking for job seekers.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sachin4717/Job-Finder" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <!-- <a href="#" class="btn-sm secondary">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://senstar.com/wp-content/uploads/Video_management_LP-1-950x534.jpg"
+                            alt="Video Session">
+                    </div>
+                    <div class="project-content">
+                        <h3>Video Session Manager</h3>
+                        <p>A Spring Boot platform designed to manage and organize video conferencing sessions efficiently.</p>
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sachin4717/Video-Session-Manager" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <!-- <a href="#" class="btn-sm secondary">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span>HTML</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript/TypeScript</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Node/Express</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Django</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span>Git/GitHub</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MS Office</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Web Developer Intern</h3>
+                        <span class="company">Steel Authority of India Ltd</span>
+                        <span class="date">June 2025 - August 2025</span>
+                        <ul>
+                            <li>Developed a Visitor Gate Pass System using Django, Bootstrap, Angular.</li>
+                            <li>Contributing to real-world web application development.</li>
+                            <li>Gained hands-on experience in backend development, and UI design.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Java Development Intern</h3>
+                        <span class="company">SaiKet Systems</span>
+                        <span class="date">Oct 2025 - Nov 2025</span>
+                        <ul>
+                            <li>Building multiple applications using core Java and OOP concepts.</li>
+                            <li>Developed projects like banking systems, and file analyzers, improving coding skills.</li>
+                            <li>Contributed to open-source projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Amdox Technologies</h3>
+                        <span class="company">Web Developer Intern</span>
+                        <span class="date">Nov 2025 - Dec 2025</span>
+                        <ul>
+                            <li>Work and contribute to software development tasks and project implementation.</li>
+                            <li>Built and enhanced application features.</li>
+                            <li>Gained practical experience in development, and debugging.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <!-- FORM -->
+        <div class="contact-form">
+            <input type="text" placeholder="Full Name..." />
+            <input type="email" placeholder="Full Email Id..." />
+            <input type="text" placeholder="Full Mobile No..." />
+            <textarea placeholder="Enter Address..."></textarea>
+            <button class="btn-primary">Submit</button>
+        </div>
+
+        <!-- BOTTOM INFO -->
+        <div class="contact-info">
+
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Address</h4>
+                <p>Quarter No- 1318, Sector- 6/D, Bokaro Steel City, Jharkhand </p>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+917654514717</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>
+                <p>sachinagrawal2244@gmail.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
